@@ -1,11 +1,5 @@
 package com.ruso.cfp401.cursoaplicacionesmoviles
 
-fun main (){
-
-    compararNombres("thiago","thiago")
-    compararNombres("thiago","kaiser")
-}
-
 fun compararNombres(nombre1: String, nombre2: String){
 
     if (nombre1 == nombre2) println("son lo mismo bro")
@@ -23,8 +17,9 @@ fun sacarRegistro(edad: Int, permiso: Boolean): String{
         mensaje = "Usted puede sacar el registro"
     } else {
         if (permiso) mensaje = "Usted puede sacar el registro"
-        else "Vuelva cuando tenga permiso"
+        else mensaje = "Vuelva cuando tenga permiso"
     }
+    return mensaje
 }
 
 fun main() {
